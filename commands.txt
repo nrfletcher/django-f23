@@ -1,0 +1,31 @@
+# helpful commands to make note of 
+
+# activates python venv
+source myenv/Scripts/activate 
+
+# shuts down current venv
+deactivate
+
+# install packages
+pip install <packagename>
+
+# check versioning
+python -m <package> --version
+
+# create django project
+django-admin startproject <projectname>
+
+# launch dev server (non prod)
+python manage.py runserver
+
+# handle unmigrated changes
+python manage.py migrate
+
+# change port 
+python manage.py runserver <port#>
+
+# change IP
+python manage.py runserver <IP:port> (i.e. "0.0.0.0:8000")
+
+# create new app in django project
+python manage.py startapp <appname>
